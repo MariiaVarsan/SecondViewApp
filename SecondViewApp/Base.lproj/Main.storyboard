@@ -1,24 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecondViewApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0RH-V1-g81">
+                                <rect key="frame" x="20" y="44" width="374" height="392"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vyV-dB-u1V">
+                                <rect key="frame" x="20" y="454" width="374" height="392"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0RH-V1-g81" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6Xs-55-1k5"/>
+                            <constraint firstItem="vyV-dB-u1V" firstAttribute="height" secondItem="0RH-V1-g81" secondAttribute="height" id="A5U-8b-w0L"/>
+                            <constraint firstItem="vyV-dB-u1V" firstAttribute="leading" secondItem="0RH-V1-g81" secondAttribute="leading" id="Cs7-E6-XTJ"/>
+                            <constraint firstItem="0RH-V1-g81" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FAK-DG-9ul"/>
+                            <constraint firstItem="vyV-dB-u1V" firstAttribute="width" secondItem="0RH-V1-g81" secondAttribute="width" id="HvP-7q-PYV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0RH-V1-g81" secondAttribute="trailing" constant="20" id="JJH-96-mEU"/>
+                            <constraint firstItem="0RH-V1-g81" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M8k-GU-IKh"/>
+                            <constraint firstItem="vyV-dB-u1V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="20" id="Tdj-MQ-wAU"/>
+                            <constraint firstItem="vyV-dB-u1V" firstAttribute="top" secondItem="0RH-V1-g81" secondAttribute="bottom" constant="20" id="V0w-1I-V5S"/>
+                            <constraint firstItem="vyV-dB-u1V" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="W0R-2e-HAW"/>
+                            <constraint firstItem="0RH-V1-g81" firstAttribute="top" secondItem="vyV-dB-u1V" secondAttribute="top" id="YSf-fE-pI4"/>
+                            <constraint firstItem="0RH-V1-g81" firstAttribute="trailing" secondItem="vyV-dB-u1V" secondAttribute="trailing" id="aa8-N4-dU2"/>
+                            <constraint firstItem="0RH-V1-g81" firstAttribute="centerX" secondItem="vyV-dB-u1V" secondAttribute="centerX" id="byz-Sb-k1S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vyV-dB-u1V" secondAttribute="trailing" constant="20" id="ids-oe-gE6"/>
+                            <constraint firstItem="vyV-dB-u1V" firstAttribute="top" secondItem="0RH-V1-g81" secondAttribute="bottom" constant="20" id="lAQ-iS-0eI"/>
+                            <constraint firstItem="vyV-dB-u1V" firstAttribute="height" secondItem="0RH-V1-g81" secondAttribute="height" id="p4a-yU-GbT"/>
+                            <constraint firstItem="vyV-dB-u1V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pT2-UK-nlk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="123.88392857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
